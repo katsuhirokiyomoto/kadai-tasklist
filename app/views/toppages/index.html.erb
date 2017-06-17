@@ -1,0 +1,11 @@
+<div class="center jumbotron">
+  <div class="text-center">
+    <% if logged_in? %>
+      <h1>Hello <%= current_user.name %>!</h1>
+      <%= link_to 'Go your TaskList!', tasks_path, class: 'btn btn-lg btn-primary' %>
+    <% else %>
+      <h1>Welcome to the Tasklists</h1>
+      <%= link_to 'Sign up now!', signup_path, class: 'btn btn-lg btn-primary' %>
+    <% end %>
+  </div>
+</div>

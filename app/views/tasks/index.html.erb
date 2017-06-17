@@ -4,13 +4,13 @@
   <table class="table table-striped">
     <thead>
       <tr>
-        <th>id</th>
+        <th>タスク番号</th>
         <th>タスク内容</th>
         <th>ステータス</th>
       </tr>
     </thead>
     <tbody>
-      <% @tasks.each do |task| %>
+      <% @tasks.each do |task, index| %>
         <tr>
           <td><%= link_to task.id, task %></td>
           <td><%= task.content %></td>
